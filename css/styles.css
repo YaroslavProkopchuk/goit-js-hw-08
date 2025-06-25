@@ -12,3 +12,21 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+.gallery {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  transition: transform 250ms ease;
+}
+
+.gallery-item :hover,
+:focus {
+  transform: scale(1.05);
+  cursor: url(../css/Cursor-min.png) 8 0, pointer;
+}
